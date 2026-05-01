@@ -19,6 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const logo = "./media/acetech.png"; // keep logo image in same folder
 
+        const sign = `<img src= "./media/sign.png">`;
+
         const receiptWindow = window.open("", "_blank", "width=900,height=750");
 
         receiptWindow.document.write(`
@@ -145,6 +147,11 @@ body{
     height:28px;
 }
 
+.sign-space img{
+    width: 100%;
+    height: 28px;
+}
+
 .sign-line{
     border-top:1px solid #a52a2a;
     padding-top:4px;
@@ -238,7 +245,7 @@ body{
         </div>
 
         <div class="sign">
-            <div class="sign-space"></div>
+            <div class="sign-space">${sign}</div>
             <div class="sign-line">For, ACETECH</div>
         </div>
 
